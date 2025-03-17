@@ -169,7 +169,7 @@
             loadingMessage.classList.add('message', 'flex', 'justify-end'); // تغيير الاتجاه إلى اليمين
             loadingMessage.innerHTML = `
                 <div class="bubble bot-bubble">
-                    <p>جاري التحميل...</p>
+                    <p>...</p>
                 </div>
             `;
             chatBox.appendChild(loadingMessage);
@@ -249,7 +249,7 @@
         function typeText(elementId, text) {
             let index = 0;
             const typingElement = document.getElementById(elementId);
-            const typingSpeed = 50; // السرعة بالمللي ثانية (يمكن تعديلها)
+            const typingSpeed = 150; // السرعة بالمللي ثانية (يمكن تعديلها)
 
             // مسح النص القديم قبل البدء
             typingElement.innerHTML = '';
